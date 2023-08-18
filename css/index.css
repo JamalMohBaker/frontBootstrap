@@ -1,0 +1,424 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(227, 225, 225);
+}
+
+#aboutMe .all {
+  box-shadow: 0 0 12px 3px rgba(62, 57, 57, 0.4);
+}
+#aboutMe .all .box1 .image img {
+  box-shadow: 0 0 12px 3px rgba(62, 57, 57, 0.4);
+}
+#aboutMe .all .box1 .box {
+  box-shadow: 0 0 12px 3px rgba(62, 57, 57, 0.4);
+  width: 80%;
+}
+#aboutMe .all .box2 h2 span {
+  color: rgb(17, 144, 187);
+}
+#aboutMe .all .box2 h6 {
+  color: gray;
+}
+#aboutMe .all .box2 .one p .a, #aboutMe .all .box2 .two p .a {
+  color: gray;
+  font-weight: bolder;
+}
+#aboutMe .all .box2 .one p .a1, #aboutMe .all .box2 .two p .a1 {
+  margin-left: 80px;
+}
+#aboutMe .all .box2 .one p .a2, #aboutMe .all .box2 .two p .a2 {
+  margin-left: 60px;
+}
+#aboutMe .all .box2 .one p .a3, #aboutMe .all .box2 .two p .a3 {
+  margin-left: 75px;
+}
+#aboutMe .all .box2 .social h3 {
+  color: gray;
+}
+#aboutMe .all .box2 .social .icons div i {
+  border: 2px solid gray;
+  padding: 15px;
+  color: gray;
+  transition: all 0.3s linear;
+}
+#aboutMe .all .box2 .social .icons div i:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+#skills h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#skills .one, #skills .two {
+  box-shadow: 0 0 12px 3px rgba(62, 57, 57, 0.4);
+}
+#skills .one {
+  background-color: #fff;
+  padding: 90px 30px 30px 30px;
+  position: relative;
+}
+#skills .one h4 {
+  background-color: rgb(17, 144, 187);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+#skills .one .prog {
+  margin-top: 35px;
+}
+#skills .one .prog .text {
+  position: relative;
+}
+#skills .one .prog .text .a, #skills .one .prog .text .b {
+  position: absolute;
+  top: -30px;
+}
+#skills .one .prog .text .b {
+  left: 80%;
+}
+#skills .two {
+  background-color: #fff;
+  padding: 90px 30px 30px 30px;
+  position: relative;
+}
+#skills .two h4 {
+  background-color: rgb(17, 144, 187);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 200px;
+}
+#skills .two h5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: gray;
+  margin-left: 30px;
+}
+#skills .two .progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+#skills .two .progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 15px solid #f2f5f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#skills .two .progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+#skills .two .progress .progress-left {
+  left: 0;
+}
+#skills .two .progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 15px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+#skills .two .progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  transform-origin: center left;
+}
+#skills .two .progress .progress-right {
+  right: 0;
+}
+#skills .two .progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+#skills .two .progress .progress-value {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+}
+#skills .two .progress.blue .progress-bar {
+  border-color: gray;
+}
+#skills .two .progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+#skills .two .progress.yellow .progress-bar {
+  border-color: gray;
+}
+#skills .two .progress.yellow .progress-left .progress-bar {
+  animation: loading-3 1s linear forwards 1.8s;
+}
+#skills .two .progress.pink .progress-bar {
+  border-color: gray;
+}
+#skills .two .progress.pink .progress-left .progress-bar {
+  animation: loading-4 0.4s linear forwards 1.8s;
+}
+#skills .two .progress.green .progress-bar {
+  border-color: #1abc9c;
+}
+#skills .two .progress.green .progress-left .progress-bar {
+  animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(126deg);
+  }
+}
+@media only screen and (max-width: 990px) {
+  #skills .two .progress {
+    margin-bottom: 20px;
+  }
+}
+#skills .two .checkB {
+  margin-left: 180px;
+}
+
+#education h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#education .box {
+  padding: 50px;
+  position: relative;
+  margin: 10px;
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  #education .box {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #education .box {
+    width: 40%;
+  }
+}
+#education .box h4 {
+  background-color: rgb(17, 144, 187);
+  color: #fff;
+  padding: 15px 50px;
+  position: absolute;
+  top: 40px;
+  left: -35px;
+}
+#education .box i {
+  color: gray;
+}
+#education .box span {
+  margin-left: 20px;
+}
+
+#protfolo h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#protfolo .fillter div {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+#protfolo .images img {
+  margin: 20px;
+  box-shadow: 0 0 12px 3px rgba(62, 57, 57, 0.4);
+}
+
+#pricing h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#pricing .all .box {
+  padding: 50px 50px 0 50px;
+  width: 33.3%;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #pricing .all .box {
+    width: 90%;
+  }
+  #pricing .all .box .bg, #pricing .all .box .bg1 {
+    width: 133% !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #pricing .all .box {
+    width: 40%;
+  }
+}
+#pricing .all .box .bg {
+  background-color: gray;
+  padding: 20px;
+  width: 143%;
+  margin-left: -50px;
+  color: #fff;
+}
+#pricing .all .box .bg1 {
+  background-color: rgb(17, 144, 187);
+  padding: 20px;
+  width: 143%;
+  margin-left: -50px;
+  color: #fff;
+}
+#pricing .all .box .bg2 {
+  width: 138%;
+}
+
+#testimonials {
+  padding-bottom: 150px;
+}
+#testimonials h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#testimonials .all .box {
+  width: 33%;
+  position: relative;
+  text-align: center;
+}
+#testimonials .all .box img {
+  width: 50%;
+  margin-left: 25%;
+}
+@media screen and (max-width: 768px) {
+  #testimonials .all .box {
+    width: 90%;
+  }
+  #testimonials .all .box .bg, #testimonials .all .box .bg1 {
+    width: 133% !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #testimonials .all .box {
+    width: 40%;
+  }
+}
+#testimonials .all .box h5 {
+  color: rgb(17, 144, 187);
+}
+#testimonials .all .box h6 {
+  color: gray;
+}
+#testimonials .all .box .card {
+  position: relative;
+  padding: 100px 50px;
+}
+#testimonials .all .box .card .card-text {
+  color: #fff;
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  margin-left: -70px;
+}
+
+#interests {
+  padding-bottom: 150px;
+}
+#interests h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#interests .text {
+  line-height: 2;
+}
+#interests .all {
+  gap: 30px;
+}
+#interests .all .box {
+  padding: 10px 35px;
+  color: #fff;
+  background-color: rgb(17, 144, 187);
+  box-shadow: 0 0 12px 3px rgba(62, 57, 57, 0.4);
+}
+#interests .all .box i {
+  margin-top: 30px !important;
+}
+
+#blog {
+  padding-bottom: 150px;
+  margin-top: 120px;
+}
+#blog h2 {
+  color: rgb(17, 144, 187);
+  margin-bottom: 60px;
+}
+#blog .all .box .text {
+  gap: 20%;
+  color: rgb(17, 144, 187);
+}
+
+.last button {
+  padding: 10px 20px !important;
+  background-color: gray;
+  border: none;
+}/*# sourceMappingURL=index.css.map */
